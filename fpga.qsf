@@ -1,0 +1,977 @@
+set_global_assignment -name IP_FILE ag7_confclk.ip
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name POWER_APPLY_THERMAL_MARGIN ADDITIONAL
+set_global_assignment -name USE_PWRMGT_SCL SDM_IO14
+set_global_assignment -name USE_PWRMGT_SDA SDM_IO11
+set_global_assignment -name VID_OPERATION_MODE "PMBUS MASTER"
+set_global_assignment -name PWRMGT_SLAVE_DEVICE0_ADDRESS 60
+set_global_assignment -name PWRMGT_SLAVE_DEVICE_TYPE OTHER
+set_global_assignment -name PWRMGT_BUS_SPEED_MODE "400 KHZ"
+set_global_assignment -name PWRMGT_DIRECT_FORMAT_COEFFICIENT_M 1
+set_global_assignment -name PWRMGT_DIRECT_FORMAT_COEFFICIENT_R 0
+set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "DIRECT FORMAT"
+set_global_assignment -name PWRMGT_TRANSLATED_VOLTAGE_VALUE_UNIT MILLIVOLTS
+set_global_assignment -name PWRMGT_PAGE_COMMAND_ENABLE OFF
+set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
+set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_100MHZ
+set_global_assignment -name DEVICE_INITIALIZATION_CLOCK OSC_CLK_1_125MHZ
+set_location_assignment PIN_A10 -to A10
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A10
+set_location_assignment PIN_A14 -to A14
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A14
+set_location_assignment PIN_A17 -to A17
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A17
+set_location_assignment PIN_A19 -to A19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A19
+set_location_assignment PIN_A21 -to A21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A21
+set_location_assignment PIN_A23 -to A23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A23
+set_location_assignment PIN_A25 -to A25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A25
+set_location_assignment PIN_A27 -to A27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A27
+set_location_assignment PIN_A29 -to A29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A29
+set_location_assignment PIN_A31 -to A31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A31
+set_location_assignment PIN_A33 -to A33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A33
+set_location_assignment PIN_A35 -to A35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A35
+set_location_assignment PIN_A37 -to A37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A37
+set_location_assignment PIN_A39 -to A39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to A39
+set_location_assignment PIN_AA7 -to AA7
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA7
+set_location_assignment PIN_AA10 -to AA10
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA10
+set_location_assignment PIN_AA14 -to AA14
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA14
+set_location_assignment PIN_AA17 -to AA17
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA17
+set_location_assignment PIN_AA19 -to AA19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA19
+set_location_assignment PIN_AA21 -to AA21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA21
+set_location_assignment PIN_AA23 -to AA23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA23
+set_location_assignment PIN_AA25 -to AA25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA25
+set_location_assignment PIN_AA27 -to AA27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AA27
+set_location_assignment PIN_AC6 -to AC6
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC6
+set_location_assignment PIN_AC9 -to AC9
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC9
+set_location_assignment PIN_AC12 -to AC12
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC12
+set_location_assignment PIN_AC15 -to AC15
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC15
+set_location_assignment PIN_AC18 -to AC18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC18
+set_location_assignment PIN_AC20 -to AC20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC20
+set_location_assignment PIN_AC22 -to AC22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC22
+set_location_assignment PIN_AC24 -to AC24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC24
+set_location_assignment PIN_AC26 -to AC26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AC26
+set_location_assignment PIN_AF6 -to AF6
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF6
+set_location_assignment PIN_AF9 -to AF9
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF9
+set_location_assignment PIN_AF12 -to AF12
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF12
+set_location_assignment PIN_AF15 -to AF15
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF15
+set_location_assignment PIN_AF18 -to AF18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF18
+set_location_assignment PIN_AF20 -to AF20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF20
+set_location_assignment PIN_AF22 -to AF22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF22
+set_location_assignment PIN_AF24 -to AF24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF24
+set_location_assignment PIN_AF26 -to AF26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AF26
+set_location_assignment PIN_AH7 -to AH7
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH7
+set_location_assignment PIN_AH10 -to AH10
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH10
+set_location_assignment PIN_AH14 -to AH14
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH14
+set_location_assignment PIN_AH17 -to AH17
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH17
+set_location_assignment PIN_AH19 -to AH19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH19
+set_location_assignment PIN_AH21 -to AH21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH21
+set_location_assignment PIN_AH23 -to AH23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH23
+set_location_assignment PIN_AH25 -to AH25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH25
+set_location_assignment PIN_AH27 -to AH27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AH27
+set_location_assignment PIN_AK6 -to AK6
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK6
+set_location_assignment PIN_AK9 -to AK9
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK9
+set_location_assignment PIN_AK12 -to AK12
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK12
+set_location_assignment PIN_AK15 -to AK15
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK15
+set_location_assignment PIN_AK18 -to AK18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK18
+set_location_assignment PIN_AK20 -to AK20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK20
+set_location_assignment PIN_AK22 -to AK22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK22
+set_location_assignment PIN_AK24 -to AK24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK24
+set_location_assignment PIN_AK26 -to AK26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK26
+set_location_assignment PIN_AK28 -to AK28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK28
+set_location_assignment PIN_AK30 -to AK30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK30
+set_location_assignment PIN_AK32 -to AK32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AK32
+set_location_assignment PIN_AM7 -to AM7
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM7
+set_location_assignment PIN_AM10 -to AM10
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM10
+set_location_assignment PIN_AM14 -to AM14
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM14
+set_location_assignment PIN_AM17 -to AM17
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM17
+set_location_assignment PIN_AM19 -to AM19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM19
+set_location_assignment PIN_AM21 -to AM21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM21
+set_location_assignment PIN_AM23 -to AM23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM23
+set_location_assignment PIN_AM25 -to AM25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM25
+set_location_assignment PIN_AM27 -to AM27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM27
+set_location_assignment PIN_AM29 -to AM29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM29
+set_location_assignment PIN_AM31 -to AM31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM31
+set_location_assignment PIN_AM33 -to AM33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AM33
+set_location_assignment PIN_AT7 -to AT7
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT7
+set_location_assignment PIN_AT10 -to AT10
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT10
+set_location_assignment PIN_AT14 -to AT14
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT14
+set_location_assignment PIN_AT17 -to AT17
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT17
+set_location_assignment PIN_AT19 -to AT19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT19
+set_location_assignment PIN_AT21 -to AT21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT21
+set_location_assignment PIN_AT23 -to AT23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT23
+set_location_assignment PIN_AT25 -to AT25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT25
+set_location_assignment PIN_AT27 -to AT27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT27
+set_location_assignment PIN_AT29 -to AT29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT29
+set_location_assignment PIN_AT31 -to AT31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT31
+set_location_assignment PIN_AT33 -to AT33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AT33
+set_location_assignment PIN_AV6 -to AV6
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV6
+set_location_assignment PIN_AV9 -to AV9
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV9
+set_location_assignment PIN_AV12 -to AV12
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV12
+set_location_assignment PIN_AV15 -to AV15
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV15
+set_location_assignment PIN_AV18 -to AV18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV18
+set_location_assignment PIN_AV20 -to AV20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV20
+set_location_assignment PIN_AV22 -to AV22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV22
+set_location_assignment PIN_AV24 -to AV24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV24
+set_location_assignment PIN_AV26 -to AV26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV26
+set_location_assignment PIN_AV28 -to AV28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV28
+set_location_assignment PIN_AV30 -to AV30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV30
+set_location_assignment PIN_AV32 -to AV32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AV32
+set_location_assignment PIN_C9 -to C9
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C9
+set_location_assignment PIN_C12 -to C12
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C12
+set_location_assignment PIN_C15 -to C15
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C15
+set_location_assignment PIN_C18 -to C18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C18
+set_location_assignment PIN_C20 -to C20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C20
+set_location_assignment PIN_C22 -to C22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C22
+set_location_assignment PIN_C24 -to C24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C24
+set_location_assignment PIN_C26 -to C26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C26
+set_location_assignment PIN_C28 -to C28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C28
+set_location_assignment PIN_C30 -to C30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C30
+set_location_assignment PIN_C32 -to C32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C32
+set_location_assignment PIN_C34 -to C34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C34
+set_location_assignment PIN_C36 -to C36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C36
+set_location_assignment PIN_C38 -to C38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to C38
+set_location_assignment PIN_E5 -to E5
+set_instance_assignment -name IO_STANDARD "1.2 V" -to E5
+set_location_assignment PIN_FH19 -to FH19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH19
+set_location_assignment PIN_FH21 -to FH21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH21
+set_location_assignment PIN_FH23 -to FH23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH23
+set_location_assignment PIN_FH25 -to FH25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH25
+set_location_assignment PIN_FH27 -to FH27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH27
+set_location_assignment PIN_FH29 -to FH29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH29
+set_location_assignment PIN_FH31 -to FH31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH31
+set_location_assignment PIN_FH33 -to FH33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH33
+set_location_assignment PIN_FH35 -to FH35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH35
+set_location_assignment PIN_FH37 -to FH37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH37
+set_location_assignment PIN_FH39 -to FH39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH39
+set_location_assignment PIN_FH41 -to FH41
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH41
+set_location_assignment PIN_FH43 -to FH43
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH43
+set_location_assignment PIN_FH45 -to FH45
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH45
+set_location_assignment PIN_FH47 -to FH47
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH47
+set_location_assignment PIN_FH49 -to FH49
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH49
+set_location_assignment PIN_FH51 -to FH51
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH51
+set_location_assignment PIN_FH53 -to FH53
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FH53
+set_location_assignment PIN_FK18 -to FK18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK18
+set_location_assignment PIN_FK20 -to FK20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK20
+set_location_assignment PIN_FK22 -to FK22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK22
+set_location_assignment PIN_FK24 -to FK24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK24
+set_location_assignment PIN_FK26 -to FK26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK26
+set_location_assignment PIN_FK28 -to FK28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK28
+set_location_assignment PIN_FK30 -to FK30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK30
+set_location_assignment PIN_FK32 -to FK32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK32
+set_location_assignment PIN_FK34 -to FK34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK34
+set_location_assignment PIN_FK36 -to FK36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK36
+set_location_assignment PIN_FK38 -to FK38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK38
+set_location_assignment PIN_FK40 -to FK40
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK40
+set_location_assignment PIN_FK42 -to FK42
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK42
+set_location_assignment PIN_FK44 -to FK44
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK44
+set_location_assignment PIN_FK46 -to FK46
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK46
+set_location_assignment PIN_FK48 -to FK48
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK48
+set_location_assignment PIN_FK50 -to FK50
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK50
+set_location_assignment PIN_FK52 -to FK52
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FK52
+set_location_assignment PIN_FP18 -to FP18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP18
+set_location_assignment PIN_FP20 -to FP20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP20
+set_location_assignment PIN_FP22 -to FP22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP22
+set_location_assignment PIN_FP24 -to FP24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP24
+set_location_assignment PIN_FP26 -to FP26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP26
+set_location_assignment PIN_FP28 -to FP28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP28
+set_location_assignment PIN_FP30 -to FP30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP30
+set_location_assignment PIN_FP32 -to FP32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP32
+set_location_assignment PIN_FP34 -to FP34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP34
+set_location_assignment PIN_FP36 -to FP36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP36
+set_location_assignment PIN_FP38 -to FP38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP38
+set_location_assignment PIN_FP40 -to FP40
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP40
+set_location_assignment PIN_FP42 -to FP42
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP42
+set_location_assignment PIN_FP44 -to FP44
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP44
+set_location_assignment PIN_FP46 -to FP46
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP46
+set_location_assignment PIN_FP48 -to FP48
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP48
+set_location_assignment PIN_FP50 -to FP50
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP50
+set_location_assignment PIN_FP52 -to FP52
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FP52
+set_location_assignment PIN_FT19 -to FT19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT19
+set_location_assignment PIN_FT21 -to FT21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT21
+set_location_assignment PIN_FT23 -to FT23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT23
+set_location_assignment PIN_FT25 -to FT25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT25
+set_location_assignment PIN_FT27 -to FT27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT27
+set_location_assignment PIN_FT29 -to FT29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT29
+set_location_assignment PIN_FT31 -to FT31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT31
+set_location_assignment PIN_FT33 -to FT33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT33
+set_location_assignment PIN_FT35 -to FT35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT35
+set_location_assignment PIN_FT37 -to FT37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT37
+set_location_assignment PIN_FT39 -to FT39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT39
+set_location_assignment PIN_FT41 -to FT41
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT41
+set_location_assignment PIN_FT43 -to FT43
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT43
+set_location_assignment PIN_FT45 -to FT45
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT45
+set_location_assignment PIN_FT47 -to FT47
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT47
+set_location_assignment PIN_FT49 -to FT49
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT49
+set_location_assignment PIN_FT51 -to FT51
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT51
+set_location_assignment PIN_FT53 -to FT53
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FT53
+set_location_assignment PIN_FV18 -to FV18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV18
+set_location_assignment PIN_FV20 -to FV20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV20
+set_location_assignment PIN_FV22 -to FV22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV22
+set_location_assignment PIN_FV24 -to FV24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV24
+set_location_assignment PIN_FV26 -to FV26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV26
+set_location_assignment PIN_FV28 -to FV28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV28
+set_location_assignment PIN_FV30 -to FV30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV30
+set_location_assignment PIN_FV32 -to FV32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV32
+set_location_assignment PIN_FV34 -to FV34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV34
+set_location_assignment PIN_FV36 -to FV36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV36
+set_location_assignment PIN_FV38 -to FV38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV38
+set_location_assignment PIN_FV40 -to FV40
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV40
+set_location_assignment PIN_FV42 -to FV42
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV42
+set_location_assignment PIN_FV44 -to FV44
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV44
+set_location_assignment PIN_FV46 -to FV46
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV46
+set_location_assignment PIN_FV48 -to FV48
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV48
+set_location_assignment PIN_FV50 -to FV50
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV50
+set_location_assignment PIN_FV52 -to FV52
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FV52
+set_location_assignment PIN_FY19 -to FY19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY19
+set_location_assignment PIN_FY21 -to FY21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY21
+set_location_assignment PIN_FY23 -to FY23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY23
+set_location_assignment PIN_FY25 -to FY25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY25
+set_location_assignment PIN_FY27 -to FY27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY27
+set_location_assignment PIN_FY29 -to FY29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY29
+set_location_assignment PIN_FY31 -to FY31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY31
+set_location_assignment PIN_FY33 -to FY33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY33
+set_location_assignment PIN_FY35 -to FY35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY35
+set_location_assignment PIN_FY37 -to FY37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY37
+set_location_assignment PIN_FY39 -to FY39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY39
+set_location_assignment PIN_FY41 -to FY41
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY41
+set_location_assignment PIN_FY43 -to FY43
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY43
+set_location_assignment PIN_FY45 -to FY45
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY45
+set_location_assignment PIN_FY47 -to FY47
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY47
+set_location_assignment PIN_FY49 -to FY49
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY49
+set_location_assignment PIN_FY51 -to FY51
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY51
+set_location_assignment PIN_FY53 -to FY53
+set_instance_assignment -name IO_STANDARD "1.2 V" -to FY53
+set_location_assignment PIN_G3 -to G3
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G3
+set_location_assignment PIN_G6 -to G6
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G6
+set_location_assignment PIN_G9 -to G9
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G9
+set_location_assignment PIN_G12 -to G12
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G12
+set_location_assignment PIN_G15 -to G15
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G15
+set_location_assignment PIN_G18 -to G18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G18
+set_location_assignment PIN_G20 -to G20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G20
+set_location_assignment PIN_G22 -to G22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G22
+set_location_assignment PIN_G24 -to G24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G24
+set_location_assignment PIN_G26 -to G26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G26
+set_location_assignment PIN_G28 -to G28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G28
+set_location_assignment PIN_G30 -to G30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G30
+set_location_assignment PIN_G32 -to G32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G32
+set_location_assignment PIN_G34 -to G34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G34
+set_location_assignment PIN_G36 -to G36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G36
+set_location_assignment PIN_G38 -to G38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to G38
+set_location_assignment PIN_GC19 -to GC19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC19
+set_location_assignment PIN_GC21 -to GC21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC21
+set_location_assignment PIN_GC23 -to GC23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC23
+set_location_assignment PIN_GC25 -to GC25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC25
+set_location_assignment PIN_GC27 -to GC27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC27
+set_location_assignment PIN_GC29 -to GC29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC29
+set_location_assignment PIN_GC31 -to GC31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC31
+set_location_assignment PIN_GC33 -to GC33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC33
+set_location_assignment PIN_GC35 -to GC35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC35
+set_location_assignment PIN_GC37 -to GC37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC37
+set_location_assignment PIN_GC39 -to GC39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC39
+set_location_assignment PIN_GC41 -to GC41
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC41
+set_location_assignment PIN_GC43 -to GC43
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC43
+set_location_assignment PIN_GC45 -to GC45
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC45
+set_location_assignment PIN_GC47 -to GC47
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC47
+set_location_assignment PIN_GC49 -to GC49
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC49
+set_location_assignment PIN_GC51 -to GC51
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC51
+set_location_assignment PIN_GC53 -to GC53
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GC53
+set_location_assignment PIN_GE18 -to GE18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE18
+set_location_assignment PIN_GE20 -to GE20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE20
+set_location_assignment PIN_GE22 -to GE22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE22
+set_location_assignment PIN_GE24 -to GE24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE24
+set_location_assignment PIN_GE26 -to GE26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE26
+set_location_assignment PIN_GE28 -to GE28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE28
+set_location_assignment PIN_GE30 -to GE30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE30
+set_location_assignment PIN_GE32 -to GE32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE32
+set_location_assignment PIN_GE34 -to GE34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE34
+set_location_assignment PIN_GE36 -to GE36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE36
+set_location_assignment PIN_GE38 -to GE38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE38
+set_location_assignment PIN_GE40 -to GE40
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE40
+set_location_assignment PIN_GE42 -to GE42
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE42
+set_location_assignment PIN_GE44 -to GE44
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE44
+set_location_assignment PIN_GE46 -to GE46
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE46
+set_location_assignment PIN_GE48 -to GE48
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE48
+set_location_assignment PIN_GE50 -to GE50
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE50
+set_location_assignment PIN_GE52 -to GE52
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GE52
+set_location_assignment PIN_GG19 -to GG19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG19
+set_location_assignment PIN_GG21 -to GG21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG21
+set_location_assignment PIN_GG23 -to GG23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG23
+set_location_assignment PIN_GG25 -to GG25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG25
+set_location_assignment PIN_GG27 -to GG27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG27
+set_location_assignment PIN_GG29 -to GG29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG29
+set_location_assignment PIN_GG31 -to GG31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG31
+set_location_assignment PIN_GG33 -to GG33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG33
+set_location_assignment PIN_GG35 -to GG35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG35
+set_location_assignment PIN_GG37 -to GG37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG37
+set_location_assignment PIN_GG39 -to GG39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG39
+set_location_assignment PIN_GG41 -to GG41
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG41
+set_location_assignment PIN_GG43 -to GG43
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG43
+set_location_assignment PIN_GG45 -to GG45
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG45
+set_location_assignment PIN_GG47 -to GG47
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG47
+set_location_assignment PIN_GG49 -to GG49
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG49
+set_location_assignment PIN_GG51 -to GG51
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG51
+set_location_assignment PIN_GG53 -to GG53
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GG53
+set_location_assignment PIN_GJ18 -to GJ18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ18
+set_location_assignment PIN_GJ20 -to GJ20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ20
+set_location_assignment PIN_GJ22 -to GJ22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ22
+set_location_assignment PIN_GJ24 -to GJ24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ24
+set_location_assignment PIN_GJ26 -to GJ26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ26
+set_location_assignment PIN_GJ28 -to GJ28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ28
+set_location_assignment PIN_GJ30 -to GJ30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ30
+set_location_assignment PIN_GJ32 -to GJ32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ32
+set_location_assignment PIN_GJ34 -to GJ34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ34
+set_location_assignment PIN_GJ36 -to GJ36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ36
+set_location_assignment PIN_GJ38 -to GJ38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ38
+set_location_assignment PIN_GJ40 -to GJ40
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ40
+set_location_assignment PIN_GJ42 -to GJ42
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ42
+set_location_assignment PIN_GJ44 -to GJ44
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ44
+set_location_assignment PIN_GJ46 -to GJ46
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ46
+set_location_assignment PIN_GJ48 -to GJ48
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ48
+set_location_assignment PIN_GJ50 -to GJ50
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ50
+set_location_assignment PIN_GJ52 -to GJ52
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GJ52
+set_location_assignment PIN_GP18 -to GP18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP18
+set_location_assignment PIN_GP20 -to GP20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP20
+set_location_assignment PIN_GP22 -to GP22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP22
+set_location_assignment PIN_GP24 -to GP24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP24
+set_location_assignment PIN_GP26 -to GP26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP26
+set_location_assignment PIN_GP28 -to GP28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP28
+set_location_assignment PIN_GP30 -to GP30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP30
+set_location_assignment PIN_GP32 -to GP32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP32
+set_location_assignment PIN_GP34 -to GP34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP34
+set_location_assignment PIN_GP36 -to GP36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP36
+set_location_assignment PIN_GP38 -to GP38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP38
+set_location_assignment PIN_GP40 -to GP40
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP40
+set_location_assignment PIN_GP42 -to GP42
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP42
+set_location_assignment PIN_GP44 -to GP44
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP44
+set_location_assignment PIN_GP46 -to GP46
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP46
+set_location_assignment PIN_GP48 -to GP48
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP48
+set_location_assignment PIN_GP50 -to GP50
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP50
+set_location_assignment PIN_GP52 -to GP52
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GP52
+set_location_assignment PIN_GU19 -to GU19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU19
+set_location_assignment PIN_GU21 -to GU21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU21
+set_location_assignment PIN_GU23 -to GU23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU23
+set_location_assignment PIN_GU25 -to GU25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU25
+set_location_assignment PIN_GU27 -to GU27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU27
+set_location_assignment PIN_GU29 -to GU29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU29
+set_location_assignment PIN_GU31 -to GU31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU31
+set_location_assignment PIN_GU33 -to GU33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU33
+set_location_assignment PIN_GU35 -to GU35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU35
+set_location_assignment PIN_GU37 -to GU37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU37
+set_location_assignment PIN_GU39 -to GU39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU39
+set_location_assignment PIN_GU41 -to GU41
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU41
+set_location_assignment PIN_GU43 -to GU43
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU43
+set_location_assignment PIN_GU45 -to GU45
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU45
+set_location_assignment PIN_GU47 -to GU47
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU47
+set_location_assignment PIN_GU49 -to GU49
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU49
+set_location_assignment PIN_GU51 -to GU51
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU51
+set_location_assignment PIN_GU53 -to GU53
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GU53
+set_location_assignment PIN_GW18 -to GW18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW18
+set_location_assignment PIN_GW20 -to GW20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW20
+set_location_assignment PIN_GW22 -to GW22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW22
+set_location_assignment PIN_GW24 -to GW24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW24
+set_location_assignment PIN_GW26 -to GW26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW26
+set_location_assignment PIN_GW28 -to GW28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW28
+set_location_assignment PIN_GW30 -to GW30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW30
+set_location_assignment PIN_GW32 -to GW32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW32
+set_location_assignment PIN_GW34 -to GW34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW34
+set_location_assignment PIN_GW36 -to GW36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW36
+set_location_assignment PIN_GW38 -to GW38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW38
+set_location_assignment PIN_GW40 -to GW40
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW40
+set_location_assignment PIN_GW42 -to GW42
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW42
+set_location_assignment PIN_GW44 -to GW44
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW44
+set_location_assignment PIN_GW46 -to GW46
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW46
+set_location_assignment PIN_GW48 -to GW48
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW48
+set_location_assignment PIN_GW50 -to GW50
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW50
+set_location_assignment PIN_GW52 -to GW52
+set_instance_assignment -name IO_STANDARD "1.2 V" -to GW52
+set_location_assignment PIN_HB19 -to HB19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB19
+set_location_assignment PIN_HB21 -to HB21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB21
+set_location_assignment PIN_HB23 -to HB23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB23
+set_location_assignment PIN_HB25 -to HB25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB25
+set_location_assignment PIN_HB27 -to HB27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB27
+set_location_assignment PIN_HB29 -to HB29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB29
+set_location_assignment PIN_HB31 -to HB31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB31
+set_location_assignment PIN_HB33 -to HB33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB33
+set_location_assignment PIN_HB35 -to HB35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB35
+set_location_assignment PIN_HB37 -to HB37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB37
+set_location_assignment PIN_HB39 -to HB39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB39
+set_location_assignment PIN_HB41 -to HB41
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB41
+set_location_assignment PIN_HB43 -to HB43
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB43
+set_location_assignment PIN_HB45 -to HB45
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB45
+set_location_assignment PIN_HB47 -to HB47
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB47
+set_location_assignment PIN_HB49 -to HB49
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB49
+set_location_assignment PIN_HB51 -to HB51
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB51
+set_location_assignment PIN_HB53 -to HB53
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HB53
+set_location_assignment PIN_HF19 -to HF19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF19
+set_location_assignment PIN_HF21 -to HF21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF21
+set_location_assignment PIN_HF23 -to HF23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF23
+set_location_assignment PIN_HF25 -to HF25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF25
+set_location_assignment PIN_HF27 -to HF27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF27
+set_location_assignment PIN_HF29 -to HF29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF29
+set_location_assignment PIN_HF31 -to HF31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF31
+set_location_assignment PIN_HF33 -to HF33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF33
+set_location_assignment PIN_HF35 -to HF35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF35
+set_location_assignment PIN_HF37 -to HF37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF37
+set_location_assignment PIN_HF39 -to HF39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF39
+set_location_assignment PIN_HF41 -to HF41
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF41
+set_location_assignment PIN_HF43 -to HF43
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF43
+set_location_assignment PIN_HF45 -to HF45
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF45
+set_location_assignment PIN_HF47 -to HF47
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF47
+set_location_assignment PIN_HF49 -to HF49
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF49
+set_location_assignment PIN_HF51 -to HF51
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF51
+set_location_assignment PIN_HF53 -to HF53
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HF53
+set_location_assignment PIN_HH18 -to HH18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH18
+set_location_assignment PIN_HH20 -to HH20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH20
+set_location_assignment PIN_HH22 -to HH22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH22
+set_location_assignment PIN_HH24 -to HH24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH24
+set_location_assignment PIN_HH26 -to HH26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH26
+set_location_assignment PIN_HH28 -to HH28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH28
+set_location_assignment PIN_HH30 -to HH30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH30
+set_location_assignment PIN_HH32 -to HH32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH32
+set_location_assignment PIN_HH34 -to HH34
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH34
+set_location_assignment PIN_HH36 -to HH36
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH36
+set_location_assignment PIN_HH38 -to HH38
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH38
+set_location_assignment PIN_HH40 -to HH40
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH40
+set_location_assignment PIN_HH42 -to HH42
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH42
+set_location_assignment PIN_HH44 -to HH44
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH44
+set_location_assignment PIN_HH46 -to HH46
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH46
+set_location_assignment PIN_HH48 -to HH48
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH48
+set_location_assignment PIN_HH50 -to HH50
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH50
+set_location_assignment PIN_HH52 -to HH52
+set_instance_assignment -name IO_STANDARD "1.2 V" -to HH52
+set_location_assignment PIN_J7 -to J7
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J7
+set_location_assignment PIN_J10 -to J10
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J10
+set_location_assignment PIN_J14 -to J14
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J14
+set_location_assignment PIN_J17 -to J17
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J17
+set_location_assignment PIN_J19 -to J19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J19
+set_location_assignment PIN_J21 -to J21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J21
+set_location_assignment PIN_J23 -to J23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J23
+set_location_assignment PIN_J25 -to J25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J25
+set_location_assignment PIN_J27 -to J27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J27
+set_location_assignment PIN_J29 -to J29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J29
+set_location_assignment PIN_J31 -to J31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J31
+set_location_assignment PIN_J33 -to J33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J33
+set_location_assignment PIN_J35 -to J35
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J35
+set_location_assignment PIN_J37 -to J37
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J37
+set_location_assignment PIN_J39 -to J39
+set_instance_assignment -name IO_STANDARD "1.2 V" -to J39
+set_location_assignment PIN_L6 -to L6
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L6
+set_location_assignment PIN_L9 -to L9
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L9
+set_location_assignment PIN_L12 -to L12
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L12
+set_location_assignment PIN_L15 -to L15
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L15
+set_location_assignment PIN_L18 -to L18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L18
+set_location_assignment PIN_L20 -to L20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L20
+set_location_assignment PIN_L22 -to L22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L22
+set_location_assignment PIN_L24 -to L24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L24
+set_location_assignment PIN_L26 -to L26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L26
+set_location_assignment PIN_L28 -to L28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L28
+set_location_assignment PIN_L30 -to L30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L30
+set_location_assignment PIN_L32 -to L32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to L32
+set_location_assignment PIN_N7 -to N7
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N7
+set_location_assignment PIN_N10 -to N10
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N10
+set_location_assignment PIN_N14 -to N14
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N14
+set_location_assignment PIN_N17 -to N17
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N17
+set_location_assignment PIN_N19 -to N19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N19
+set_location_assignment PIN_N21 -to N21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N21
+set_location_assignment PIN_N23 -to N23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N23
+set_location_assignment PIN_N25 -to N25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N25
+set_location_assignment PIN_N27 -to N27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N27
+set_location_assignment PIN_N29 -to N29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N29
+set_location_assignment PIN_N31 -to N31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N31
+set_location_assignment PIN_N33 -to N33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to N33
+set_location_assignment PIN_U7 -to U7
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U7
+set_location_assignment PIN_U10 -to U10
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U10
+set_location_assignment PIN_U14 -to U14
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U14
+set_location_assignment PIN_U17 -to U17
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U17
+set_location_assignment PIN_U19 -to U19
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U19
+set_location_assignment PIN_U21 -to U21
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U21
+set_location_assignment PIN_U23 -to U23
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U23
+set_location_assignment PIN_U25 -to U25
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U25
+set_location_assignment PIN_U27 -to U27
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U27
+set_location_assignment PIN_U29 -to U29
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U29
+set_location_assignment PIN_U31 -to U31
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U31
+set_location_assignment PIN_U33 -to U33
+set_instance_assignment -name IO_STANDARD "1.2 V" -to U33
+set_location_assignment PIN_W6 -to W6
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W6
+set_location_assignment PIN_W9 -to W9
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W9
+set_location_assignment PIN_W12 -to W12
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W12
+set_location_assignment PIN_W15 -to W15
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W15
+set_location_assignment PIN_W18 -to W18
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W18
+set_location_assignment PIN_W20 -to W20
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W20
+set_location_assignment PIN_W22 -to W22
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W22
+set_location_assignment PIN_W24 -to W24
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W24
+set_location_assignment PIN_W26 -to W26
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W26
+set_location_assignment PIN_W28 -to W28
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W28
+set_location_assignment PIN_W30 -to W30
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W30
+set_location_assignment PIN_W32 -to W32
+set_instance_assignment -name IO_STANDARD "1.2 V" -to W32
